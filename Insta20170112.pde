@@ -41,6 +41,10 @@ void draw()
   p1.display();
   p2.display();
   
+  stroke(frameCount % 255, 255, 255);
+  strokeWeight(0.5);
+  line(p1.x, p1.y, p2.x, p2.y);
+  
   if(mousePressed)
   {
     p2.lock();
